@@ -74,12 +74,12 @@ int main() {
                 cin>>t;
             }
             for(int i = 0; i<t;i++) {
-                r = (rand()%28)*0.7;
+                d = (rand()%28)*0.1;
                 if(i%2 == 0) {
-                    ddeq.pushFront(r);
+                    ddeq.pushFront(d);
                 }
                 else {
-                    ddeq.pushBack(r);
+                    ddeq.pushBack(d);
                 }
             }
             cout<<"Ввывод дека с начала: \n";
@@ -106,8 +106,8 @@ int main() {
             cout<<"Последний элемент дека: "<< d <<endl;
             cout<<"Размер вашего дека: "<<ddeq.getSize()<<endl;
             cout<<"Проверка оператора присваивания. Введите один элемент: ";
-            cin>>t;
-            ddeq1.pushFront(t);
+            cin>>d;
+            ddeq1.pushFront(d);
             ddeq = ddeq1;
             cout<<"Изменённый дек: ";
             ddeq.outputFromBack(cout);
